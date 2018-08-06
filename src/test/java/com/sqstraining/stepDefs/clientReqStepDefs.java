@@ -65,6 +65,7 @@ public class clientReqStepDefs
 
         // Assert that correct status code is returned.
         //Assert.assertEquals(statusCode /*actual value*/, 200 /*expected value*/, "Correct status code returned");
+
     }
 
 }
