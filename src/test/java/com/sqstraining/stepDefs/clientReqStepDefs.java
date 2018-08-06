@@ -71,7 +71,7 @@ public class clientReqStepDefs
     {
         RestAssured.baseURI = "http://restapi.demoqa.com/utilities/weather/city";
         RequestSpecification httpRequest = RestAssured.given();
-        Response response = httpRequest.get("/Hyderabad");
+        Response response = httpRequest.get("/Johannesburg");
 
         // Get the status line from the Response and store it in a variable called statusLine
         String statusLine = response.getStatusLine();
