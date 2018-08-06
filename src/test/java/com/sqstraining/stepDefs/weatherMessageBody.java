@@ -16,14 +16,14 @@ public class weatherMessageBody
     public void i_launch_the_browser()
     {
         // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+      
     }
 
     @When("^I search for tomorrows weather on the web$")
     public void i_search_for_tomorrows_weather_on_the_web()
     {
         // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+
     }
 
     @Test
