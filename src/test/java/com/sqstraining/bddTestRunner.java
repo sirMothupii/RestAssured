@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 //setting the path for the feature file
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "classpath:features"
-        , glue = "com.sqstraining.stepDefs")
+        , glue = "com.sqstraining.clientReqStepDefs")
 
 public class bddTestRunner
 {
