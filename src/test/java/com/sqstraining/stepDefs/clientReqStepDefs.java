@@ -8,6 +8,8 @@ import io.restassured.http.Method;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class clientReqStepDefs
 {
@@ -50,6 +52,28 @@ public class clientReqStepDefs
         String responseBody = response.getBody().asString();
         System.out.println("Response Body is =>  " + responseBody);
 
+        RestAssured.baseURI = "http://restapi.demoqa.com/utilities/weather/city";
+        RequestSpecification httpRequest = RestAssured.given();
+        Response response = httpRequest.get("/Johannesburg");
+
+        // Get the status code from the Response. In case of
+        // a successfull interaction with the web service, we
+        // should get a status code of 200.
+        int statusCode = response.getStatusCode();
+
+        // Assert that correct status code is returned.
+        //Assert.assertEquals(statusCode /*actual value*/, 200 /*expected value*/, "Correct status code returned");
+    }
+    @Test
+    public void GetWeatherStatusLine()
+    {
+        RestAssured.baseURI = "http://restapi.demoqa.com/utilities/weather/city";
+        RequestSpecification httpRequest = RestAssured.given();
+        Response response = httpRequest.get("/Hyderabad");
+
+        // Get the status line from the Response and store it in a variable called statusLine
+        String statusLine = response.getStatusLine();
+        //Assert.assertEquals(statusLine /*actual value*/, "HTTP/1.1 200 OK" /*expected value*/, "Correct status code returned");
     }
 
 }
