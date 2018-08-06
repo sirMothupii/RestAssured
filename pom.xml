@@ -68,6 +68,14 @@
           <artifactId>serenity-rest-assured</artifactId>
           <version>1.9.28</version>
       </dependency>
+      <!-- https://mvnrepository.com/artifact/net.serenity-bdd/serenity-cucumber -->
+      <dependency><groupId>net.serenity-bdd</groupId><artifactId>serenity-cucumber</artifactId><version>1.9.5</version>
+      </dependency>
+      <dependency>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-simple</artifactId>
+          <version>1.7.12</version>
+      </dependency>
 
   </dependencies>
 
